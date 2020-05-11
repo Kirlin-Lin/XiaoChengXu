@@ -653,4 +653,6 @@ app.post('/di', (req, res) => {
         code: 200
     })
 })
-app.listen(8001, '127.0.0.1')
+var server = app.listen(8001, function(){
+	console.log('后台已启动')
+})
