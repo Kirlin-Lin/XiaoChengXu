@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/shouye/shouye",
+    "pages/detail/detail",
+
+    "pages/dianying/dianying",
+    "pages/dianying/dianying_detail/dianying_detail",
+    "pages/dianying/more/more",
+    
+    "pages/home/home",
+    "pages/test/test"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": { 
+    "selectedColor": "#f00",
+    "list": [
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "阅读",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/dianying/dianying",
+        "text": "电影",
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "images/tab/dianying_hl.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

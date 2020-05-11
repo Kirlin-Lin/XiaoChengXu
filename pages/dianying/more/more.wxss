@@ -1,0 +1,54 @@
+@import "../xing/xing.wxss";
+.movies-container {
+  margin: 40rpx 0 40rpx 6rpx;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22rpx;
+  float: left;
+}
+
+.movie-img {
+  width: 200rpx;
+  height: 270rpx;
+  padding-bottom: 20rpx;
+}
+
+.movie-title {
+  margin-bottom: 16rpx;
+  font-size: 24rpx;
+  width: 190rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* .stars-container {
+  display: flex;
+  flex-direction: row;
+} */
+
+/* 星星 */
+/* .stars{
+  display: flex;
+  align-items: center;
+}
+.stars text {
+ 
+  font-size: 8px;
+  padding-left: 5rpx;
+}
+
+.star-score {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #1f3463;
+}
+.yellow{
+  color: yellow;
+}
+.red{
+  color: red;
+} */

@@ -1,0 +1,20 @@
+<template name="xingxing">
+	<view class="stars-container">
+		<view class="stars">
+			<block>
+				<text class="yellow" wx:if="{{rating.stars>10}}">星</text>
+				<text class="yellow" wx:if="{{rating.stars>20}}">星</text>
+				<text class="yellow" wx:if="{{rating.stars>30}}">星</text>
+				<text class="yellow" wx:if="{{rating.stars>40}}">星</text>
+				<text class="yellow" wx:if="{{rating.stars>50}}">星</text>
+
+				<text class="red" wx:if="{{rating.stars<10}}">星</text>
+				<text class="red" wx:if="{{rating.stars<20}}">星</text>
+				<text class="red" wx:if="{{rating.stars<30}}">星</text>
+				<text class="red" wx:if="{{rating.stars<40}}">星</text>
+				<text class="red" wx:if="{{rating.stars<50}}">星</text>
+			</block>
+		</view>
+		<text class="star-score">{{rating.average}}</text>
+	</view>
+</template>

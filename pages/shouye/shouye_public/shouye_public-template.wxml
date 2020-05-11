@@ -1,0 +1,17 @@
+<template name="pub">
+	<view class="content">
+		<view class="touTime">
+			<image class="touxiang" src="{{avatar}}"></image>
+			<text class="time">{{date}}</text>
+		</view>
+		<text class="wenzi">{{title}}</text>
+		<image class="img" src="{{imgSrc}}"></image>
+		<text class="text">{{content}}</text>
+		<!-- 五角星 -->
+		<image class="tubiao" src="/images/icon/chat.png"></image>
+		<text class="shu">{{collection}}</text>
+		<!-- 小眼睛 -->
+		<image class="tubiao" src="/images/icon/view.png"></image>
+		<text class="shu">{{reading}}</text>
+	</view>
+</template>

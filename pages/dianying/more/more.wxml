@@ -1,0 +1,11 @@
+<import src="../xing/xing.wxml" />
+<view class="movies-container">
+	<block wx:for="{{shuju}}" wx:key="key">
+		<view class="movie-container" catchtap="detail" data-id="{{item.id}}">
+			<image class="movie-img" src="{{item.images.large}}"></image>
+			<text class="movie-title">{{item.original_title}}</text>
+			<!-- 引入星星组件 -->
+			<template is="xingxing" data="{{...item}}"></template>
+		</view>
+	</block>
+</view>

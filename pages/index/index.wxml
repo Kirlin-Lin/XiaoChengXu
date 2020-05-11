@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="userinfo">
+		<button class="btn1" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击获取信息</button>
+		<block wx:else>
+			<view class="hy">
+				<image class="images" src="{{userInfo.avatarUrl}}"></image>
+				<text class="wenzi">你好，{{userInfo.nickName}}</text>
+				<view class="btn">
+					<button bindtap="bindViewTap">点击进入探索...</button>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

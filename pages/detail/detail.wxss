@@ -1,0 +1,68 @@
+.zong {
+  padding: 10rpx 20rpx;
+}
+.touxiang{
+  display: flex;
+  align-items: center;
+}
+.imgSrc {
+  width: 100%;
+  height: 500rpx;
+  position: relative;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.author,
+.fabiao,
+.dateTime {
+  margin-left: 20rpx;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.title{
+  /* display: block; */
+  font-size: 16px;
+  font-weight: 700;
+}
+.detail{
+  color: rgb(123, 100, 100);
+  font-size: 12px;
+  line-height: 20px;
+}
+.img{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+.tu{
+  margin-left: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+.dianBtn{
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+/* 图片上的小图标 */
+.xiaotu{
+  width: 100rpx;
+  height: 100rpx;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

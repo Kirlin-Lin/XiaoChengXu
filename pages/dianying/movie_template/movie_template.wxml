@@ -1,0 +1,9 @@
+<import src="../xing/xing.wxml" />
+<template name="movie_template">
+	<view class="movie-container" catchtap="detail" data-id="{{item.id}}">
+		<image class="movie-img" src="{{item.images.large}}"></image>
+		<text class="movie-title">{{item.original_title}}</text>
+    <!-- 引入星星组件 -->
+		<template is="xingxing" data="{{...item}}"></template>
+	</view>
+</template>

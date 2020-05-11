@@ -1,0 +1,25 @@
+<!-- 引入电影模板 -->
+<import src="./dianying_shuju/dianying_shuju.wxml" />
+<import src="./dianying_All/dianying_All.wxml" />
+<!-- 搜索框 -->
+<view>
+	<view class="sou">
+		<icon type="search" class="search-img" size="13" color="#405f80"></icon>
+		<input class="inp" placeholder="你的名字" bindfocus="onFocus" bindblur="onBlur" />
+		<image class="xx" src="/images/icon/xx.png" catchtap="updataImg"></image>
+	</view>
+</view>
+
+<!-- 首页 -->
+<view class="movie-list-container" wx:if="{{searchShow}}">
+	<view class="movies-template" wx:for="{{shuju}}" wx:key="key">
+		<template is="movieListTemplate" data="{{item}}" />
+	</view>
+</view>
+
+<!-- 点击搜索之后显示 -->
+<view class="movies-container1" wx:else="{{searchShow}}">
+	<block wx:for="{{souYeContent}}" wx:key="key">
+		<template is="movieListAll" data="{{item}}" />
+	</block>
+</view>

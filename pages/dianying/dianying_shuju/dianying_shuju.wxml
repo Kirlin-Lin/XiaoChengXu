@@ -1,0 +1,17 @@
+<import src="../movie_template/movie_template.wxml"/>
+<template name="movieListTemplate">
+	<view class="inner-container">
+		<view class="movie-head">
+			<text class="slogan">{{item.title}}</text>
+			<view class="more" bindtap="gengduo">
+				<text class="more-text" data-id="{{item.yemianId}}">更多</text>
+			</view>
+		</view>
+		<view class="movies-container" wx:for="{{item.subjects}}" wx:key="key">
+			<block>
+			<!-- 引入页面图片 -->
+				<template is="movie_template" data="{{item}}"></template>
+			</block>
+		</view>
+	</view>
+</template>

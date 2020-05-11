@@ -1,0 +1,50 @@
+<import src="../xing/xing.wxml" />
+<view>
+	<view class="jianjie">
+		<view class="LeftShang">
+
+			<view class="shang" catchtap="bianDa">
+				<view class="timu">
+					<text class="title">{{shuju.original_title}}</text>
+					<text class="guojia">{{shuju.countries}} {{shuju.year}}</text>
+					<view class="heng">
+						<text class="love">{{shuju.wish_count}}人喜欢</text>
+						<text class="ping">{{shuju.comments_count}}条评论</text>
+					</view>
+				</view>
+				<view class="imgTu">
+					<image class="tu" src="{{shuju.images.large}}"></image>
+				</view>
+			</view>
+
+			<view class="jieshao">
+				<text class="name">{{shuju.original_title}}</text>
+				<!-- 引入星星组件 -->
+				<template is="xingxing" data="{{...shuju}}"></template>
+				<text class="daoyian mr5">导演 <text class="mr-left5" wx:for="{{shuju.directors}}" wx:key="key">{{item.name}}</text></text>
+				<text class="yanyuan mr5">影人 <text class="mr-left5" wx:for="{{shuju.casts}}" wx:key="key">{{item.name}}</text></text>
+				<text class="leixing mr5">类型 <text class="mr-left5">{{shuju.genres}}</text></text>
+			</view>
+		</view>
+		<!-- <view class="imgTu">
+			<image class="tu" src="{{shuju.images.large}}"></image>
+		</view> -->
+	</view>
+	<view class="juqing">
+		<view class="pd20">
+			<text class="jian fz12">剧情简介</text>
+			<text class="content fz12">
+			{{shuju.summary}}
+			</text>
+		</view>
+	</view>
+	<view class="renwu">
+		<text class="yingren fz12">影人</text>
+		<view class="ImgHeng">
+			<view class="nameTu" wx:for="{{shuju.casts}}" wx:key="key">
+				<image class="renTu" src="{{item.avatars.large}}"></image>
+				<text class="wen fz12">{{item.name}}</text>
+			</view>
+		</view>
+	</view>
+</view>

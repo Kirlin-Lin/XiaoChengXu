@@ -1,0 +1,42 @@
+@import "./dianying_shuju/dianying_shuju.wxss";
+@import "./dianying_All/dianying_All.wxss";
+/* 搜索框 */
+.sou {
+  position: relative;
+}
+
+.inp {
+  padding-left: 40px;
+  box-sizing: border-box;
+  height: 35px;
+  background: #f2f2f2;
+  font-size: 16px;
+}
+
+.search-img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+.xx{
+  width: 15px;
+  height: 15px;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+
+.movies-template {
+  margin-bottom: 30rpx;
+}
+
+.movie-list-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+

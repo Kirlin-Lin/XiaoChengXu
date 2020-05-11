@@ -1,0 +1,26 @@
+.stars-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.stars{
+  display: flex;
+  align-items: center;
+}
+.stars text {
+ 
+  font-size: 8px;
+  padding-left: 5rpx;
+}
+
+.star-score {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #1f3463;
+}
+.yellow{
+  color: yellow;
+}
+.red{
+  color: red;
+}

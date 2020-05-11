@@ -1,0 +1,30 @@
+<view>
+	<image class="imgSrc" src="{{flag ?  datailData.music.coverImg : datailData.imgSrc}}">
+		<!-- 照片上面的按钮， -->
+		<image class="xiaotu" catchtap="shipin" src="{{flag ? '/images/music/music-stop.png' : '/images/music/music-start.png'}}"></image>
+		<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+	</image>
+	<view class="zong">
+		<view class="touxiang">
+			<image class="avatar" src="{{datailData.avatar}}"></image>
+			<text class="author">{{datailData.author}}</text>
+			<text>发表于</text>
+			<text class="dateTime">{{datailData.dateTime}}</text>
+		</view>
+		<view class="content">
+			<text class="title">{{datailData.title}}</text>
+			<view class="img">
+			<!-- 收藏 -->
+				<image wx:if="{{ tu }}" catchtap="shoucang" class="tu leftTu" src="/images/icon/collection.png"></image>
+				<image wx:else bindtap="shoucang" class="tu leftTu" src="/images/icon/collection-anti.png"></image>
+				<!-- 分享 -->
+				<image bindtap="fenxiang" class="tu rightTu" src="/images/icon/share.png"></image>
+				
+			</view>
+			<button class="dianBtn" size="mini" bindtap="btnZhuan" data-id="{{datailData.postId}}" open-type="share">点击转发</button>
+			<text class="detail">{{datailData.detail}}</text>
+		</view>
+	</view>
+
+
+</view>

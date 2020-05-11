@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "文与字",
+  "navigationBarBackgroundColor": "#405F80",
+  "onReachBottomDistance":10
+  }

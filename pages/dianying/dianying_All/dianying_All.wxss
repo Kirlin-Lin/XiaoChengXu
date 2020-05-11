@@ -1,0 +1,28 @@
+@import "../xing/xing.wxss";
+/* 搜索页面 */
+.movies-container1 {
+  margin: 40rpx 0 40rpx 6rpx;
+}
+
+.movie-container1 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22rpx;
+  float: left;
+}
+
+.movie-img1 {
+  width: 200rpx;
+  height: 270rpx;
+  padding-bottom: 20rpx;
+}
+
+.movie-title1 {
+  margin-bottom: 16rpx;
+  font-size: 24rpx;
+  width: 190rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+

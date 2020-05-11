@@ -1,0 +1,52 @@
+/* 模板中的样式 */
+
+.content{
+  margin: 5px 0;
+}
+.touTime{
+  margin-left: 15rpx;
+}
+.touxiang {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.time {
+  margin-left: 15px;
+  font-size: 30rpx;
+  color: rgb(124, 108, 108);
+  vertical-align: middle;
+}
+.wenzi{
+  display: block;
+  padding: 15rpx 0;
+  margin-left: 15rpx;
+  font-weight: 700;
+}
+.img {
+  width: 100%;
+  height: 350rpx;
+}
+.text{
+  font-size: 30rpx;
+  color: rgb(143, 102, 102);
+  padding: 0 10px;
+  display: block;
+}
+
+/* 星星,眼睛 */
+.tubiao{
+  padding: 0 10px;
+  height:16px;
+  width:16px;
+  margin-right: 8px;
+  /* 设置垂直方式 */
+  vertical-align:middle;
+}
+.shu{
+  font-size: 10px;
+  color: #ccc;
+  vertical-align:middle;
+}
